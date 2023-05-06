@@ -1,4 +1,4 @@
-package com.example.springaop.template;
+package com.example.springaop.templatepattern;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class NoTemplateController {
 
     @GetMapping("/notemplate")
-    public String hi() {
+    public String noTemplate() {
 
         long start = System.currentTimeMillis();
 
@@ -19,6 +19,6 @@ public class NoTemplateController {
 
         log.info("실행 시간 = {}ms", end - start);
 
-        return "hi";
+        return "no template";
     }
 }

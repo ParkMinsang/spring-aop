@@ -1,4 +1,4 @@
-package com.example.springaop.template;
+package com.example.springaop.templatepattern;
 
 import lombok.extern.slf4j.Slf4j;
 

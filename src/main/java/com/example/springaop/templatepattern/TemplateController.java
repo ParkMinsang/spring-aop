@@ -1,4 +1,4 @@
-package com.example.springaop.template;
+package com.example.springaop.templatepattern;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class TemplateController extends AbstractTemplate {
 
     @GetMapping("/yestemplate")
-    public String hi() {
+    public String templatePattern() {
         execute();
 
-        return "hi";
+        return "template pattern";
     }
 
     @Override
